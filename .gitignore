@@ -1,8 +1,19 @@
-# --- Build Output ---
+# --- PlatformIO (ESP32) ---
+.pio/
+.pioenvs/
+.piolibdeps/
+.pio/build/
+.pio/libdeps/
+
+# --- CMake & Compilazione (STM32) ---
 build/
-bin/
 Debug/
 Release/
+bin/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
 *.elf
 *.bin
 *.hex
@@ -11,27 +22,22 @@ Release/
 *.obj
 *.a
 
-# --- CMake ---
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-Makefile
-
-# --- VS Code (Opzionale: scommenta se vuoi ignorare le config utente) ---
-# .vscode/
-.vscode/ipch/
-.vscode/*.log
-# Ignoriamo settings.json se contiene percorsi assoluti del tuo Mac
-.vscode/settings.json
-
-# --- STM32CubeIDE / Eclipse (Non ci servono) ---
+# --- STM32CubeIDE / Eclipse ---
 .project
 .cproject
 .mxproject
 .settings/
 .classpath
+*.launch
+*.su
+*.d
 
-# --- OS Files (Mac/Windows) ---
+# --- VS Code ---
+.vscode/ipch/
+.vscode/*.log
+.vscode/settings.json
+
+# --- OS Files ---
 .DS_Store
 Thumbs.db
 Icon?
